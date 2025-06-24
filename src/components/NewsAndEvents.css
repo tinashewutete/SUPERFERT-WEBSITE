@@ -1,0 +1,95 @@
+.news-text{
+    font-family: Montserrat;
+    position: relative;
+    width: 40%;
+    padding: 20px;
+    align-content: center;
+    right: 0;
+}
+.news-text h4{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 44px;
+    letter-spacing: 0%;
+    margin-bottom: 15px;
+}
+.news-text h4 strong{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+.news-text p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin-bottom: 15px;
+}
+.news2-text{
+    display: flex;
+    gap: 200px;
+}
+.news2-text p strong{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin-bottom: 15px;
+}
+.news2img img{
+    width: 35px;
+}
+.grid-wrappe4{
+    padding: 40px;
+}
+.LatestNews h2{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+.hr-line{
+  border: none;
+  height: 2px;
+  background-color: #1e1e1e;
+  width: 80%;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .news-text {
+    width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .news2-text {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .news2-text p strong {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .news2img img {
+    width: 30px;
+  }
+
+  .LatestNews h2 {
+    font-size: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .grid-wrappe4 {
+    padding: 20px 10px;
+  }
+}
