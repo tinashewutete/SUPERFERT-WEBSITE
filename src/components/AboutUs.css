@@ -55,34 +55,114 @@
     width: 30%;
     padding-top: 40px;
 }
-
-/* ✅ Responsive Design */
+/* Responsive styles for tablets */
 @media (max-width: 768px) {
-  .hero-text {
-    width: 100%;
-    padding: 20px 50px;
-  }
-
-  .hero-text h2 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .about-page {
-    padding: 40px 20px;
+  .hero-container {
     flex-direction: column;
-    align-items: center;
     text-align: center;
-  }
-
-  .about-page-text,
-  .aboutimg-container {
-    width: 90%;
+    height: auto;
+    padding-top: 60px;
   }
 
   .hero-bg-effect {
     flex-direction: column;
     gap: 20px;
+    height: auto;
+  }
+
+  .hero-text {
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .about-page {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .about-page-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .aboutimg-container {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+/* Responsive styles for mobile phones */
+@media (max-width: 480px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 30px 10px;
+    height: auto;
+    background-position: top;
+  }
+
+  .hero-text {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .hero-text h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .about-page {
+    padding: 20px 10px;
+    gap: 30px;
+  }
+
+  .about-page-text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .aboutimg-container {
+    width: 100%;
+  }
+
+  .hero-bg-effect {
+    display: none; /* Hide if too cluttered on mobile */
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-bg-effect {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.01);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(11px);
     padding: 20px;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-bg-effect {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.01);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(11px);
+    padding: 20px;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
   }
 }

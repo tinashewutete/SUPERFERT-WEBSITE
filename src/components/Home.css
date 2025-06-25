@@ -241,11 +241,6 @@
     margin-bottom: 40px;
 }
 
-.logo-container img {
-    width: 350px;
-    height: auto;
-}
-
 .products h2 {
     font-weight: 800;
     font-size: 4rem;
@@ -336,26 +331,25 @@
     padding-left: 100px;
 }
 
-
-
-
-@media (max-width: 768px) {
+/* -----------------------------------
+   Tablet View (768px and below)
+----------------------------------- */
+@media screen and (max-width: 768px) {
   .hero-img {
-    width: 100%;
-    top: 0;
+    width: 90%;
     left: 0;
-    position: static;
+    top: -60px;
+    position: relative;
   }
 
   .hero-text1 {
     padding: 40px 20px;
-    text-align: center;
     width: 100%;
   }
 
   .hero-text1 h1 {
-    font-size: 36px;
-    line-height: 1.2;
+    font-size: 50px;
+    line-height: 64px;
   }
 
   .hero-text1 p {
@@ -364,18 +358,9 @@
     line-height: 24px;
   }
 
-  .hero-btns {
+  .hero-text1 .hero-btns {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .gray-btn, .white-btn {
-    width: 100%;
-    max-width: 250px;
-  }
-
-  .partners h2 {
-    font-size: 28px;
+    gap: 10px;
   }
 
   .partners .partner-logos {
@@ -385,12 +370,13 @@
   .made-in-zim {
     height: auto;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px 20px;
   }
 
   .made-in-zim .made-in-zim-text {
     left: 0;
-    padding: 10px;
+    text-align: center;
+    padding: 0;
   }
 
   .who-we-are {
@@ -400,6 +386,10 @@
 
   .who-we-are-text {
     width: 100%;
+  }
+
+  .green-line {
+    display: none;
   }
 
   .products {
@@ -413,7 +403,6 @@
 
   .image-container img {
     width: 100%;
-    height: auto;
   }
 
   .contact {
@@ -422,11 +411,69 @@
     text-align: center;
   }
 
-  .contact h2 {
-    font-size: 36px;
+  .contact-text {
+    padding: 0;
   }
 
-  .contact-text {
-    padding: 20px;
+  .contact h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .contact-text p {
+    font-size: 18px;
+  }
+}
+
+
+/* -----------------------------------
+   Mobile View (480px and below)
+----------------------------------- */
+@media screen and (max-width: 480px) {
+  .hero-text1 h1 {
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .hero-text1 p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .gray-btn,
+  .white-btn {
+    width: 100%;
+  }
+
+  .made-in-zim h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .made-in-zim p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .partners h2 {
+    font-size: 28px;
+  }
+
+  .products h2 {
+    font-size: 2rem;
+  }
+
+  .contact h2 {
+    font-size: 32px;
+  }
+
+  .contact-text p {
+    font-size: 16px;
+  }
+
+  .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    padding: 10px;
   }
 }
