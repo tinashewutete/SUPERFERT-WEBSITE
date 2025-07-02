@@ -344,6 +344,8 @@
 
   .hero-text1 {
     padding: 40px 20px;
+    text-align: center;
+    align-items: center;
     width: 100%;
   }
 
@@ -358,9 +360,9 @@
     line-height: 24px;
   }
 
-  .hero-text1 .hero-btns {
-    flex-direction: column;
-    gap: 10px;
+  .hero-btns{
+padding-top: 50px;
+    justify-content: center;
   }
 
   .partners .partner-logos {
@@ -440,10 +442,14 @@
     font-size: 14px;
     line-height: 20px;
   }
+  .hero-btns{
+    display: flex;
+    align-items: center;
+  }
 
   .gray-btn,
   .white-btn {
-    width: 100%;
+    width: 50%;
   }
 
   .made-in-zim h2 {
@@ -473,7 +479,7 @@
   }
 
   .grid-wrapper {
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    grid-template-columns: repeat(1, 1fr); /* 2 items per row */
     padding: 10px;
   }
 }
